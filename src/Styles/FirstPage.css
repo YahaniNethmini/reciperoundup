@@ -13,3 +13,54 @@ body {
     width: 300px;
     height: auto;
 }
+
+.text-animation-container {
+    overflow: hidden; 
+}
+
+@keyframes text-slide {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+h1 {
+    animation: text-slide 30s linear infinite; 
+    color: #A87676;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.log {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+h3 {
+    text-align: center; 
+    margin-bottom: 20px; 
+    color: #A87676;
+}
+
+
+.button1,
+.button2 {
+    padding: 10px 20px;
+    background-color: #ffffff; 
+    color: #A87676; 
+    border: 1px solid #A87676;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button1:hover,
+.button2:hover {
+    background-color: #A87676; 
+    color: white; 
+}
+
+
